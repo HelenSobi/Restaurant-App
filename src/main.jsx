@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-import App from './App.jsx';
-import Homepage from './pages/Homepage.jsx';
+import App from './App';
+import Homepage from './pages/Homepage';
 import RestListPage from './components/RestListPage';
-import RestViewDetail from './components/RestViewDetail.jsx'
-import Error from './components/Error.jsx'
-import './index.css'
+import RestViewDetail from './components/RestViewDetail';
+import Error from './components/Error';
+import './index.css';
+import ClassComp from './components/ClassComp';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       element:<RestViewDetail/>
     }
   ],
-  errorElement:<Error/>
+  // errorElement:<Error/>
   }
 
 ]);
