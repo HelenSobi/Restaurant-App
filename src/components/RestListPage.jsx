@@ -4,7 +4,7 @@ import Shimmer from './Shimmer';
 
 const RestListPage = () => {
   const restInfo= useRestList(); //custom hook
-  if(restInfo.length === 0) return  <Shimmer/>;
+  if(restInfo.length === 0) return  <div>No restaurants found.</div>;
   return (
     <section>
           <div className="w-fit mx-auto">
